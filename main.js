@@ -1,18 +1,19 @@
 const perfect = (number) => {
-    let result = 0;
+  if (!number) return;  
+  
+  let result = 0;
     
     for (let index = 1; index < number; index++) {
       if (number % index === 0) result += index;
     }
   
-    if (result === number) {
-      return true;
-    }
+    if (result === number) return true;
     return false;
   }
   
-  const isPerfect = (number) => (perfect(number)) ? console.log('true') : console.log('false');
+const isPerfect = (number) => (perfect(number)) ? console.log('true') : console.log('false');
 
+isPerfect();
 isPerfect(1);
 isPerfect(2);
 isPerfect(3);
