@@ -9,11 +9,13 @@ const perfect = (number) => {
   
     if (result === number) return true;
     return false;
-  }
+}
   
 const isPerfect = (number) => (perfect(number)) ? console.log('true') : console.log('false');
 
 isPerfect();
+isPerfect('test');
+isPerfect(0);
 isPerfect(1);
 isPerfect(2);
 isPerfect(3);
